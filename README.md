@@ -1,6 +1,6 @@
 # RCC_MRU_2020_web_dev_team
 
-### Steps to first commit in the repository
+### Steps to commit into the repository
 - Clone the repository
 ```
 $ git clone https://github.com/raviprakashdev/RCC_MRU_2020_web_dev_team.git
