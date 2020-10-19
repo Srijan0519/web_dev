@@ -2,33 +2,24 @@
 
 ### Steps to first commit in the repository
 - Clone the repository
-<pre>
-<code>
-git clone https://github.com/raviprakashdev/RCC_MRU_2020_web_dev_team.git
-</code>
-</pre>
+```
+$ git clone https://github.com/raviprakashdev/RCC_MRU_2020_web_dev_team.git
+```
 
 - Now do the task that is assigned to you. After that, use these commands to commit
-<pre>
-<code>
-git add .
-git commit -m "[your message]"
-</code>
-</pre>
-
+```
+$ git add .
+$ git commit -m "[your message]"
+```
 - We will work on our own branch. To create new branch, this command is used
-<pre>
-<code>
-git checkout -b [branch name]
-</code>
-</pre>
+```
+$ git checkout -b [branch name]
+```
 
 - After that, you have to push to Github using this command
-<pre>
-<code>
-git push origin [branch name]
-</code>
-</pre>
+```
+$ git push origin [branch name]
+```
 
 After that, go to github and open the repository. There click on the branches and then you find the 'New Pull Request' button besides your branch. 
 
