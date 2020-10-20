@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url("https://wallpaperaccess.com/full/710721.jpg");
 
-   
+
 }
 
 h1 {
@@ -14,6 +14,7 @@ h1 {
     font-weight: normal;
     padding: 10px 20px;
     margin: 2;
+    text-align: center;
 }
 
 h2{
@@ -21,8 +22,21 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: darkgray;
     padding: 10px 20px;
+    text-align: center;
 }
 
 img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 5px 4px; color: whitesmoke;
+  }
+  
+.column.left {
+    background-image: url('https://i.pinimg.com/736x/ca/10/2a/ca102ab6e31529c2a0c1034dc99d9197.jpg');
+    background-size: cover;
+    width: 400px;
+  height: 400px;
+  display: inline-block;
+  position: bottom;
+  border-radius: 20px;
+  
+  
   }
