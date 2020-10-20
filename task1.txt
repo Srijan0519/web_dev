@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>task1</title>
+</head>
+<body>
+<body bgcolor="thistle">
+<hr style="height:40px;color:red;background-color:red">
+<hr style="height:40px;color:black;background-color:black">
+<h1><b><i><center><u>TASK 1</i></u></center></h1></b>
+<center><a href="https://www.instagram.com/accounts/emailsignup/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" width="200px"height ="200px" hspace="5"></a>
+<a href="https://touch.facebook.com/"><img src="https://www.facebook.com/images/fb_icon_325x325.png"width="200px" height ="200px" hspace="5"></a></center>
+<center><h1 style="color:#e83e8c;">HOW CAN WE HELP YOU ? </h1></style>
+<b><p>Fill the form given below to interact with us</p></center></b>
+<b><i><u>
+<br>First Name  -   </br><br>
+<input type="text"></br>
+<BR>Last Name - </br>
+<br><input type="text"></br>
+<br> Email address -  </br>
+<br><input type="text"></br>
+<br>Confirm Email address - </br>
+<br><input type="text"></br>
+<br>Phone no. - </br>
+<br> <input type="text"></br>
+</b></u></i>
+<br><button class="button" onclick="myFunction()">Submit</button>
+<script>
+function myFunction() 
+{
+  alert("Your form is submitted");
+}
+</script>
+<hr style="height:40px;color:red;background-color:red">
+<hr style="height:40px;color:black;background-color:black">
+</form>
+</body>
+</html>
