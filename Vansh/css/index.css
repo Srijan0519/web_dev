@@ -1,0 +1,25 @@
+body {
+  background-image: url(./book_index.jpeg);
+}
+#left {
+  float: left;
+  margin-right: 4cm;
+  margin-top: 20px;
+}
+.west {
+  color: 2px solid black;
+  width: 75%;
+  float: left;
+  margin-right: 600px;
+}
+#right {
+  float: left;
+  padding-right: 5cm;
+  margin-top: 20px;
+}
+.east {
+  color: 2px solid black;
+  width: ;
+  float: left;
+  padding-right: 13cm;
+}
