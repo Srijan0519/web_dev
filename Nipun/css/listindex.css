@@ -1,0 +1,43 @@
+
+body{
+    background: url("backlist.jpeg");
+}
+
+.outer{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+
+}
+
+
+.left{
+
+    
+   
+    display: flex;
+    font-size: larger;
+    height: 500px;
+    width: 50%;
+    height: 100%;
+    padding-top: 200px;
+    padding-left: 200px;
+    
+}
+
+.right{
+   
+    width: 50%;
+     display: flex;
+     font-size: larger;
+     height: 100%;
+     padding-top: 200px;
+     padding-left: 200px;
+}
+
+hr{
+    width: 350%;
+}
