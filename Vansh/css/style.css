@@ -55,7 +55,6 @@ hr {
 }
 
 #ig {
-
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -70,10 +69,8 @@ hr {
 #fb:hover {
   background-color: white;
   color: #3b5998;
-
 }
 #ig:hover {
   background: white;
   color: #ffc0e7;
 }
-

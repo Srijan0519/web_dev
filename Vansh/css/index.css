@@ -1,5 +1,8 @@
 body {
-  background-image: url(./book_index.jpeg);
+  background-image: url(../images/book_index.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #left {
   float: left;
