@@ -1,0 +1,38 @@
+,.image
+{
+width:100px;
+height:150px;
+
+}
+.button
+{
+background-color:green;
+color: white;
+border: none;
+  padding: 10px 270px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+ cursor: pointer;
+}
+.login
+{
+    float: left;
+    background-color:red;
+    color: white;
+    border: none;
+      padding: 0px 5px;
+      text-align:center;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+    }
+ .cancel
+ {
+float:right;
+font-size: 16px;
+ }   
+ .last
+ {
+     background-color:lightgray;
+ }

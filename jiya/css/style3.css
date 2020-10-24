@@ -1,0 +1,17 @@
+.left
+ {
+     left:0;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+        top: 0;
+}
+.right 
+{
+    right:0;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+        top: 0;
+}
+  
