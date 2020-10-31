@@ -1,0 +1,63 @@
+body{ 
+    background-image: url(./image1.jpg);
+
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.navbar
+{
+    background-image: linear-gradient(to left, #403b4a, #e7e9bb);
+    padding: 5 !important;
+    text-shadow: 1px 1px 0px #e5e7b7;
+    font-weight: 500;
+   
+    
+}
+
+/* -----------------------------------------Banner Section------------------------------------------ */
+
+#banner
+{
+    padding: 10 !important;
+
+}
+
+
+.promo-title
+{
+    text-shadow: 2px 2px 2px #e7e9bb;
+    font-family: Verdana  ;
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+.designation
+{
+    font-family: Verdana  ;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 50px
+}
+.img-fluid
+{
+    width: 40%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 300%;
+    border-radius: 100%;
+    margin-top:10%;
+    
+    
+    
+    
+    box-shadow: 3px 6px 5px  #403b4a;
+    -moz-border-radius:100px;
+    
+}
