@@ -18,3 +18,25 @@
     margin-right: 5%;
     margin-left: 5%;;
 }
+.header{
+    height: 87.5vh !important;
+    background: url("../images/header-bc.jpg") no-repeat;
+    
+    background-size: cover;
+}
+.header1{
+    height: 87.5vh !important;
+    background-color: #0080807c;
+}
+.container{
+    color: whitesmoke;
+    padding-top: 10vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.newbie{
+    margin-top: 25vh;
+}
+.newbie1{
+    margin-top: 3vh;
+}
