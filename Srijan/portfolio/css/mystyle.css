@@ -1,0 +1,19 @@
+
+html,body,h1,h2,h3,h4,h5,h6,p,li,a{
+  font-family: "Roboto", sans-serif;
+  color:rgb(255, 255, 255);
+  }
+  hr{
+    width: 90%;
+      border: 0;
+      height: 1px;
+      background-color:darkgrey;
+      opacity: 0.89;
+  }
+  .b{
+    background:url(../image/Bg\(2\).jpeg) ;
+    
+  }
+  .jumbotron {
+              background: none;             
+          }
