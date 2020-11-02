@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            height: 0px;
+        }
+        .heading{
+            height: 50px;
+    text-align:center;
+    font-weight: 900;
+    font-size: larger;
+    padding-top:20px;
+    color:white;
+    background-color: rgb(39, 39, 212);
+
+        }
+        .section
+{
+    background-color: blueviolet;
+    border: 2px solid black;
+    height:200px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item
+{
+    background-color: rebeccapurple;
+    border:2px solid palegreen;
+    height:100px;
+    width:100px;
+    padding:20px;
+    margin: 10px;
+    text-align: center;
+}
+.type1
+{
+    flex-direction: column;
+    height: 800px;
+}
+.type2{
+    flex-direction: column;
+    height: 800px;
+}
+.type3{
+    flex-direction: column-reverse;
+    height: 800px;
+    
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        FLEXBOX
+    </div>
+    <div class="section">
+        <div class="item"> JAVA</div>
+        <div class="item">C</div>
+        <div class="item">c++</div>
+        <div class="item">html</div>
+        <div class="item"> css</div>
+        <div class="item"> java script</div>
+    </div>
+    <div class="section type1">
+        <div class="item"> JAVA</div>
+        <div class="item">C</div>
+        <div class="item">c++</div>
+        <div class="item">html</div>
+        <div class="item"> css</div>
+        <div class="item"> java script</div>
+    </div>
+    <div class="section type2">
+        <div class="item"> JAVA</div>
+        <div class="item">C</div>
+        <div class="item">c++</div>
+        <div class="item">html</div>
+        <div class="item"> css</div>
+        <div class="item"> java script</div>
+    </div>
+    <div class="section type3">
+        <div class="item"> JAVA</div>
+        <div class="item">C</div>
+        <div class="item">c++</div>
+        <div class="item">html</div>
+        <div class="item"> css</div>
+        <div class="item"> java script</div>
+    </div>
+
+<h2 style="text-align: center;"> CREATED BY TUSHAR JUNEJA</h2>
+
+    
+</body>
+</html>

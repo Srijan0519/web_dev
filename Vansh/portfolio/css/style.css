@@ -1,0 +1,11 @@
+.bg_image {
+    background-image: url('./portfolio.jpg');
+    width: 100%;
+    height: 200px;
+    
+}
+.img {
+    background-repeat: none;
+    margin: 0px;
+    width: max-content;
+}
