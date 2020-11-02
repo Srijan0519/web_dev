@@ -3,7 +3,7 @@
     background: rgba(0, 0, 0, 0.7) url("../images/img2.jpg") ;
     background-size: cover;
     background-blend-mode: darken;
-    
+
 }
 
 .txt-col{
@@ -46,6 +46,8 @@
     padding-right: 18vh;
     padding-top: 3vh;
     float: right;
+    color: brown;
+    font-style: italic;
 }
 
 
@@ -60,7 +62,6 @@
 .rule{
     width: 60vh;
 }
-
 
 
 
@@ -101,7 +102,7 @@
   
   .format-contact{
       list-style: none;
-      padding-top: 16vh;
+      padding-top: 9.5vh;
       display: flex;
   }
 
@@ -114,12 +115,33 @@
 
   .format-text-temp{
 
-    padding-right: 18vh;
+    padding-right: 29vh;
     padding-top: 8vh;
+    color:black;
     
   }
 
 
   .contact{
       padding-left: 5vh;
+  }
+
+  .format-skill{
+    padding-bottom: 50vh;
+   padding-right: 13vh;
+
+  }
+
+  .format-text-3{
+    padding-right: 40vh;
+    padding-top: 0.5vh;
+    padding-left: 8vh;
+   
+   
+
+  }
+
+  .format-email{
+    text-emphasis: none;
+    font-size: smaller;
   }
