@@ -3,82 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    
-    <title>MY Profile</title>
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          
-      </header>
-    <img src="/Vansh/images/potrait.jpg" alt="Profile Photo" id="Photo" />
-    <div id="first_name">Vansh</div>
-    <div id="last_name">Bisht</div>
-    <div class="head">About Me</div>
-    <div id="about">
-      <q>
-        <em>
-          There is no nobelity in poverty. I have been a rich man and I have
-          been a poor man. And I have chose rich every fking time.
-        </em>
-      </q>
+    <div class="introduction">
+      <div class="dark-box">
+        <div class="overlay"></div>
+        <div class="content italic">
+          <b>
+            <i> Hello, nice to meet you! </i>
+          </b>
+        </div>
+        <div class="tag_line">
+          <h1>
+            I am Vansh Singh Bisht,
+            <br />
+            A Web Designer
+          </h1>
+        </div>
+        <div class="info italic">
+          <i>
+            <b>I am ready to showcase you my skills.</b>
+          </i>
+        </div>
+      </div>
     </div>
-    <div class="head">Personal Info</div>
-    <table style="padding-left: 625px;">
-      <tr>
-        <td>Name</td>
-        <td>Vansh Bisht</td>
-      </tr>
-      <tr>
-        <td>Age</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>Semester</td>
-        <td>1 <sup>st</sup></td>
-      </tr>
-      <tr>
-        <td>College</td>
-        <td style="padding-left: 50px;">Manav Rachna University</td>
-      </tr>
-    </table>
-    <input type="button" value="Facebook" id="fb" onclick="window.location.href='https://www.facebook.com/';">
-    <input type="button" value="Instagram" id="ig" onclick="window.location.href='https://www.instagram.com/?hl=en';">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="padding-left: 150px">Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link italic" href="#" style="padding-left: 800px"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link italic" href="#about_me">About</a>
+          <a class="nav-link italic" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <hr style="margin-top: 0px" />
+
+    <div class="about_me container">
+      <h1><b>ABOUT ME </b></h1>
+      <hr class="line" />
+      <h5>Maybe I should tell you a little bit more about myself</h5>
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <p>
+            I am Vansh, a B.Tech student, part time gamer and a full time
+            learner. I havent done a lot of projects and in fact, it is one of
+            my first project but hey! I need to start from somewhere.
+          </p>
+          <p>
+            I am currently learning full stack development and I planning to
+            master it over a span of next few months. And then I will be
+            proceeding to app development and Data Analytical Machine Learning.
+          </p>
+          <p>
+            My some of my research include swimming with electric eel and
+            collecting static electricity in my hair an I seriously enjoy every
+            moment of it.
+          </p>
+          <p>
+            When I am not delving into Web Development, I spend my spare time
+            eating pizza, riding my bike and thinking up corny jokes(though not
+            all the same time).
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="./images/portfolio-1.jpg"
+            alt="Portfolio Image"
+            class="about_image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="text">
+        <h1>SERVICES</h1>
+        <hr class="service_line" />
+        <div class="a" style="width: 100%">
+          <div class="a1">
+            <svg
+              width="3em"
+              height="3em"
+              viewBox="0 0 16 16"
+              class="bi bi-laptop"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z"
+              />
+              <path
+                d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z"
+              />
+            </svg>
+            <h4>Web Design</h4>
+            If you like my designs,
+            <br />
+            I can make some for you too!
+          </div>
+          <div class="a2">
+            <svg
+              width="3em"
+              height="3em"
+              viewBox="0 0 16 16"
+              class="bi bi-globe"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"
+              />
+            </svg>
+            <h4>SEO&amp;SEM</h4>
+            If you want your website among the top sites,
+            <br />
+            this service is specially for you.
+          </div>
+          <div class="a3">
+            <svg
+              width="3em"
+              height="3em"
+              viewBox="0 0 16 16"
+              class="bi bi-file-earmark-break-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2zm0 10v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2H2zm7.5-8.5v-2l3 3h-2a1 1 0 0 1-1-1zm-9.5 7a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+            <h4>Print</h4>
+            Apart from developing websites,
+            <br />
+            I also offer printing services.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quotes container">
+      <H1>QUOTES</H1>
+      <hr class="quote_line">
+      <h6>Here are some of the best quotes which give me motivation</h6>
+      <ul class="quote_list">
+        <li><em>"Push yourself, because no one else is going to do it for you."</em></li>
+        <li><em>"Great things never come from comfort zones."</em></li>
+        <li><em>"Dream it. Wish it. Do it."</em></li>
+        <li><em>"The harder you work for something, the greater you’ll feel when you achieve it."</em></li>
+        <li><em>"Let me tell you something. There’s no nobility in poverty. I’ve been a rich man and I’ve been a poor man. And I choose rich every f**king time."</em></li>
+      </ul>
+    </div>
+    <div class="web_development">
+     <div class="container" style="padding-top: 50px;">
+       <h1>WEB DEVELOPMENT</h1>
+       <hr class="web_line">
+       <div class="web" style="width: 100%;">
+        <div class="web1">
+          <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
+          <p>Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.</p>
+        </div>
+        <div class="web2">
+            <p>For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician.</p>
+            <p>Web development may be a collaborative effort between departments rather than the domain of a designated departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end  Web development may be a collaborative effort between developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.</p>
+        </div>
+       </div>
+       
+     </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <h1 style="padding-top: 100px;">CONTACT</h1>
+        <hr class="contact_line">
+        <form action="#" class="contact-form">
+          <div class="controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Your firstname *</label>
+                  <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="surname">Your lastname *</label>
+                  <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="surname">Your email *</label>
+              <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="surname">Your message for us *</label>
+              <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+            </div>
+            <div class="text-center">
+              <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
+            </div>
+          </div>
+        </form>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        &copy;Vansh Bisht(RCC MRU Web Dev 2020)
+      </div>
+    </footer>
   </body>
 </html>
