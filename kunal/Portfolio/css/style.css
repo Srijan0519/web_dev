@@ -1,0 +1,90 @@
+.navbar{
+    background-color:  #FF7F50;
+}
+.nav-link{
+    color: 	#008080 !important;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+
+}
+.navbar-brand1{
+    height: 40%;
+    width: 40% ;
+}
+.navbar-nav{
+    margin-right: 15%;
+}
+.nav-item{
+    margin-right: 5%;
+    margin-left: 5%;;
+}
+.header{
+    height: 87.5vh !important;
+    background: url("../images/header-bc.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header1{
+    height: 87.5vh !important;
+    background-color: #0080807c;
+}
+.container{
+    color: whitesmoke;
+    padding-top: 10vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.newbie{
+    margin-top: 25vh;
+}
+.newbie1{
+    margin-top: 3vh;
+}
+.nav-link:hover{
+    text-decoration: underline;
+
+}
+.nav-link:active{
+    text-decoration: underline;
+}
+.skills{
+    height: 88vh !important;
+    background-color: whitesmoke;
+    color: teal;
+}
+.MySkills{
+   padding-top: 10vh;
+   justify-content: center;
+   display: flex;
+}
+.skil{
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    text-align: center;
+}
+.progress-bar{
+    background-color: #Ff7F50;
+}
+.container1{
+    margin-left: 25vh;
+    margin-right: 25vh;
+    padding-top: 10vh;
+}
+.newbie2{
+    padding-top: 4vh;
+}
+.progress{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.naya{
+    text-align: right;
+}
+.naya1{
+    -webkit-transform: rotate(180deg);
+}

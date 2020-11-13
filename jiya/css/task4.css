@@ -1,0 +1,49 @@
+img
+{
+  border-radius: 50%;
+  margin-left: 600px;
+  height: 200px;
+  width: 150px;
+  margin-top: 20px;
+}
+.main
+{
+  margin-left: 450px;
+}
+.main input[type=text]
+{ 
+    margin-top: -10px;
+    width: 50%;
+    padding: 12px 20px;
+}
+.main input[type=password]
+{ 
+    margin-top: -10px;
+    width: 50%;
+    padding: 12px 20px;
+}
+.main input[type="submit"]
+{ 
+    margin-top: 15px;
+    width: 55%;
+    padding: 17px 25px;
+    background-color: rgb(15, 170, 15);
+    color:white;
+    border: none;
+}
+footer
+{ 
+  background-color:lightgrey;
+  width: 480px;
+  padding: 18px;
+  margin-left: 450px; 
+  margin-top: 20px;
+}
+footer input[type=button]
+{
+  width: 80px;
+  background-color:red;
+  color: white;
+  padding: 10px;
+   margin-left:-10px;
+}
