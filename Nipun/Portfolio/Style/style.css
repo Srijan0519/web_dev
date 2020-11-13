@@ -102,7 +102,7 @@
   
   .format-contact{
       list-style: none;
-      padding-top: 9.5vh;
+      padding-top: 4vh;
       display: flex;
   }
 
@@ -127,7 +127,7 @@
   }
 
   .format-skill{
-    padding-bottom: 50vh;
+   
    padding-right: 13vh;
 
   }
@@ -143,5 +143,7 @@
 
   .format-email{
     text-emphasis: none;
-    font-size: smaller;
+    font-size: smaller  ;
   }
+
+  
