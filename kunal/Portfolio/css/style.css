@@ -86,5 +86,14 @@
     text-align: right;
 }
 .naya1{
-    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#work{
+    height: 88vh !important;
+    background-color: whitesmoke;
+    color: teal;
+}
+.project{
+    padding-top: 7vh; 
+    text-align: center; 
 }
