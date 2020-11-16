@@ -1,0 +1,10 @@
+.row{
+    display: flex;
+}
+
+.img-format{
+height: 50vh;
+padding-left: 15vh;
+padding-top: 3vh;
+padding-bottom: 3vh;
+}
