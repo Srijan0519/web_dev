@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar-brand{
+color: #ffffff !important;
+}
+.nav-link{
+    color: white !important;
+}
+.row{
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
