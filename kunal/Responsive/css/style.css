@@ -1,6 +1,7 @@
 *{
-    margin: 0%;
+    
     padding: 0%;
+    scroll-behavior: smooth;
 }
 .navbar-brand{
 color: #ffffff !important;
@@ -11,4 +12,56 @@ color: #ffffff !important;
 .row{
     padding-left: 3vh;
     padding-right: 3vh;
+}
+#cardd{
+    margin: 3vh;
+}
+.card-header{
+    padding-bottom: 13vh;
+}
+.card-deck{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.img-about{
+    width: 100%;
+    height: 50vh;
+}
+.txt-about{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-top: 4vh;
+}
+.row{
+    padding-top: 2vh;
+}
+#contact{
+    background-color: #343a40;
+    color: #fff;
+}
+input{
+    width: 100%;
+}
+#footer-button{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.rcc{
+    text-align: center;
+    margin-bottom: 0!important;
+    padding-top: 2vh;
+}
+.tr-footer{
+
+}
+.footer-table{
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 8vh;
+}
+.fotter{
+    /* padding-right: 30vh; */
 }
