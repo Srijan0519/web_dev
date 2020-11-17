@@ -19,7 +19,11 @@
     padding: 100px;
     font-size:20px;
 }
-
+#item2,#item4
+{
+    margin-top: 20PX;
+    margin-left: 200px;
+}
 .footer
 {
     font-size: 20px;
