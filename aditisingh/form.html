@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+
+body {font-family: Arial;}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 3px 3px 3px;
+  border-color:lightgrey;
+  background:white;
+}
+
+input[type=text]:focus, input[type=password]:focus {   
+  background-color: #ddd;
+  outline:grey;
+}
+ 
+
+button {
+  background-color: limegreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: grey;
+  cursor: pointer;
+  width: 82.5%;
+  
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+.myDiv {
+  border: 1px outset gainsboro;
+  background-color:silver;    
+  text-align: right;
+  height: 90px;
+padding-top: 40px;
+padding-bottom: 10px;
+}
+
+    </style>
+   </head>
+
+<body> 
+    
+     <form>
+         <div class="container">
+             
+            <label><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username"><br>
+        
+            <label><b>Password</b></label><br>
+            <input type= "text" placeholder="Enter Password"><br> 
+
+            <div>
+            <button type="submit" >Login</button>
+            </div>
+            <div>
+                <label>
+                  <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+                </label>
+                </div>
+        </div>
+<div class="myDiv">
+   
+        <button type="reset" style="background-color: red;  margin-left:50px;">Cancel</button>
+        Forgot <a href="www.password recovery.com">password?</a>
+  
+
+</div>
+
+</form>
+
+</body>
+</html>
