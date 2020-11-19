@@ -1,0 +1,41 @@
+.row{
+    display: flex;
+}
+
+.img-format{
+height: 50vh;
+padding-left: 10vh;
+padding-top: 3vh;
+padding-bottom: 3vh;
+}
+
+.my-1{
+    padding-right: 9vh;
+    padding-bottom: 4vh;
+}
+.txt-format{
+    padding-top: 7vh;
+}
+ 
+.format-footer{
+padding-top: 5vh;    
+} 
+
+.format-form{
+    color: white;
+    
+
+}
+
+.for{
+    margin: 2vh;
+    width: 95%;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.format-icon{
+    padding-top: 9vh;
+    padding-left: 18vh;
+    padding-right: 18vh;
+}
