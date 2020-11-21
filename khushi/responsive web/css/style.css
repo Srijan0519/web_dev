@@ -40,16 +40,19 @@
 }
 
 #card{
+
+    display: flex;
     margin: 2vh;
 }
-.card-header{
+.card-header
+{
     text-align: center;
     padding-bottom: 13vh;
 }
 .card-line{
-    display: flex;
-    margin-left: 10vh;
-    margin-right: 10vh;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card-body{
