@@ -1,4 +1,8 @@
-.row{
+*{
+    padding: 0;
+    margin: 0;
+}
+row{
     display: flex;
 }
 
@@ -21,22 +25,24 @@ padding-bottom: 3vh;
 padding-top: 5vh;    
 } 
 
-.format-form{
+.form{
     color: white;
     
 
 }
-
-.for{
-    margin: 5px;
+.form1{
+    margin: 2px;
     width: 95%;
-    padding-left: 20vh;
-    padding-right: 20vh;
+    padding-left: 15vh;
+    padding-right: 13vh;
     
+}
+.copy{
+    color: white;
 }
 
 .format-icon{
     padding-top: 9vh;
-    padding-left: 18vh;
+       padding-left: 18vh;
     padding-right: 18vh;
 }
