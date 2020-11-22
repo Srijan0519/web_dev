@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .introduction {
   background-image: url(../images/portfolio.jpg);
   background-position: center center;
@@ -58,7 +61,7 @@
 .services {
   background-color: #b5b0b0;
   margin-top: 200px;
-
+  padding-bottom: 1cm;
 }
 .services {
   height: 400px;
@@ -102,22 +105,14 @@
   background-color:  #282C35;
   color: white;
   margin-top: 70px;
-  padding-bottom: 12cm;
+  padding-bottom: 1 cm;
 }
 
 .web_line {
   border-bottom: 2px solid white;
   margin-right: 22cm;
 }
-.web1 {
-  width: 50%;
-  float: left;
-}
-.web2 {
-  width: 50%;
-  float: right;
-  padding-left: 2cm;
-}
+
 .contact_line {
   border-bottom: 2px solid black;
   margin-right: 26cm;
@@ -128,4 +123,9 @@ footer {
   padding-top: 30px;
   color: white;
   padding-bottom: 30px;
+}
+@media(max-width: 768px) {
+  .web_development {
+    padding-bottom: ;
+  }
 }
