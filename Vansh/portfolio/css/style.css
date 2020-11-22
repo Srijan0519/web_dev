@@ -29,17 +29,17 @@
   color: black;
   padding-top: 225px;
   font-size: 30px;
-  padding-left: 500px;
+  text-align: center;
 }
 .tag_line {
   color: whitesmoke;
-  font-size: 300pxpx;
-  padding-left: 500px;
+  font-size: 300px;
+  text-align: center;
 }
 .info {
   color: black;
   font-size: 30px;
-  padding-left: 500px;
+  text-align: center;
   padding-bottom: 350px;
 }
 .about_me {
@@ -53,9 +53,9 @@
 .about_image {
     float: right;
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    
+    height: 350px;
+    width: 350px;
+   border-left: 20cm;
     
 }
 .services {
@@ -68,12 +68,10 @@
 }
 
 .service_line {
-  margin-right: 1100px;
+  margin-right: 26cm;
   border-bottom: 2px solid black;
 }
-.text {
-  padding-left: 200px;
-    padding-right: 100px;
+.text { 
     padding-top: 100px;
 }
 .a1 {
@@ -126,6 +124,6 @@ footer {
 }
 @media(max-width: 768px) {
   .web_development {
-    padding-bottom: ;
+    padding-bottom: 2cm;
   }
 }

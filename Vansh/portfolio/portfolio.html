@@ -42,37 +42,39 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" style="padding-left: 150px">Portfolio</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link italic" href="#" style="padding-left: 800px"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-link italic" href="#about_me">About</a>
-          <a class="nav-link italic" href="#">Contact</a>
-        </div>
-      </div>
-    </nav>
+  <div class="container">
+  <a class="navbar-brand" href="#">My Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about_me">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
     <hr style="margin-top: 0px">
 
-    <div class="about_me container">
+    <div class="container about_me" id="about_me">
       <h1><b>ABOUT ME </b></h1>
       <hr class="line" />
       <h5>Maybe I should tell you a little bit more about myself</h5>
       <br />
       <div class="row">
-        <div class="col-12 col-sm-12">
+        <div class="col-12 col-sm-8">
           <p>
             I am Vansh, a B.Tech student, part time gamer and a full time
             learner. I havent done a lot of projects and in fact, it is one of
@@ -94,7 +96,7 @@
             all the same time).
           </p>
         </div>
-        <div class="col-12 col-sm-12">
+        <div class="col-12 col-sm-4">
           <img
             src="./images/portfolio-1.jpg"
             alt="Portfolio Image"
@@ -104,12 +106,13 @@
       </div>
     </div>
 
-    <div class="services" style="height: auto;">
-      <div class="text">
+    <div class="services" id="services" style="height: auto;">
+      <div class="container text">
         <h1>SERVICES</h1>
         <hr class="service_line">
-        <div class="a container row" style="width: 100%">
-          <div class="col-12 col-sm-3">
+        <div class="container" style="width: 100%">
+          <div class="row">
+          <div class="col-12 col-sm-4">
             <svg
               width="3em"
               height="3em"
@@ -131,7 +134,7 @@
             <br />
             I can make some for you too!
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-4">
             <svg
               width="3em"
               height="3em"
@@ -151,7 +154,7 @@
             <br />
             this service is specially for you.
           </div>
-          <div class="col-12 col-sm-3">
+          <div class="col-12 col-sm-4">
             <svg
               width="3em"
               height="3em"
@@ -171,6 +174,7 @@
             I also offer printing services.
           </div>
         </div>
+      </div>
       </div>
     </div>
     <div class="quotes container">
@@ -202,7 +206,7 @@
        
      </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="container">
         <h1 style="padding-top: 100px;">CONTACT</h1>
         <hr class="contact_line">
@@ -243,5 +247,7 @@
         &copy;Vansh Bisht(RCC MRU Web Dev 2020)
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
