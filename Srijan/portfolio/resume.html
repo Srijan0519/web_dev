@@ -5,21 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/mystyle.css">
-<<<<<<< HEAD
-
-=======
->>>>>>> d73cb6d1c3c3fcfc58c32564a613b29fbbbe72b2
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-<!--
-<style>
-=======
 <!--<style>
->>>>>>> d73cb6d1c3c3fcfc58c32564a613b29fbbbe72b2
 html,body,h1,h2,h3,h4,h5,h6 {
 font-family: "Roboto", sans-serif;
 color:rgb(255, 255, 255);
@@ -32,7 +23,7 @@ hr{
     opacity: 0.89;
 }
 .b{
-  background:url(/image/Bg\(2\).jpeg) ;
+  background:url("image/Bg.jpeg") ;
   
 }
 .jumbotron {
@@ -40,26 +31,36 @@ hr{
         }
 
 
-</style>
--->
-<<<<<<< HEAD
+</style>-->
 
-=======
->>>>>>> d73cb6d1c3c3fcfc58c32564a613b29fbbbe72b2
 </head>
 <body class="b">
-  <div class="container-fluid" >
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand; text-white" href="#">Portfolio</a>
-      <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#soc">Social Media</a>
-          </li>
+  
+  
+  <div class="topnav" id="myTopnav">
+    <a href="#home" style="background-color: black;">Portfolio</a>
+    <a href="#Skills">Skills</a>
+    <a href="#soc">Social Media</a>
     
-  </nav>
+    
+    
+    
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  
+ 
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 <div class="container-fluid " style="max-width:1400px;">
 <div class="jumbotron" style="background-color: rgb(43, 42, 44); opacity: 0.75;">
     <div class="row">
@@ -133,11 +134,7 @@ hr{
     
     
       <div class="container">
-<<<<<<< HEAD
-        <h2 class="padding-16" style="padding-top:2.5%;"><i class="fa fa-eye "></i> Work Experience</h2>
-=======
         <h2 class="padding-16" style="padding-top:2.5%;" ><i class="fa fa-eye "></i> Work Experience</h2>
->>>>>>> d73cb6d1c3c3fcfc58c32564a613b29fbbbe72b2
         <br>
         <div class="container">
           <h5 class="opacity"><b>Web development</b></h5>
@@ -207,11 +204,7 @@ hr{
 </div>
 
 <footer class="container-fluid" style="padding-bottom: 2.5%;">
-<<<<<<< HEAD
-  <center><a id="soc"><p>Find me on social media.</a></p></center>
-=======
   <center><a id="soc">Find me on social media.</a></p></center><p>
->>>>>>> d73cb6d1c3c3fcfc58c32564a613b29fbbbe72b2
   <center>
   <a href="https://www.tumblr.com/blog/sillie-the-pooh" class=" fa fa-tumblr "></a> 
   &nbsp;
