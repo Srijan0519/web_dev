@@ -1,50 +1,32 @@
-navbar-brand
+
+.navbar-brand
 {
-  padding-left: 80px;
+padding-left: 80px;
 }
 #home
 {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 @media(max-width:950px)
 {
-    .navbar-brand{
-        padding-left:0px;
-    }
+  .navbar-brand{
+      padding-left:0px;
+  }
 }
-.about-us h1
+.about 
 {
-  text-align: center;
-  padding:3rem;
+text-align: center;
+padding:3rem;
 }
-#card h1
-{
-  text-align: center;
-  padding:3rem;
-}
+
 #about img
 {
-    width:100%;
-    height:50vh;
-}
-#contact
-{
-  background-color: #343a40;
-  color: #fff;
-}
-input
-{
-  padding: 5px;
-    margin: 5px;
-    width: 100%;
-}
-table
-{
-   margin-top:30px;
+  width:100%;
+  height:50vh;
+
 }
 .copyright {
-  background-color: #343a40;
-  padding: 10px;
-  text-align: center;
-  color: #fff;
-}
+background-color: #343a40;
+padding: 10px;
+text-align: center;
+color: #fff;
