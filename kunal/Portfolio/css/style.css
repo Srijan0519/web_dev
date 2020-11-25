@@ -15,27 +15,28 @@
     margin-right: 15%;
 }
 .nav-item{
-    margin-right: 5%;
-    margin-left: 5%;;
+    margin-right: 8%;
+    margin-left: 8%;;
 }
 .header{
-    height: 87.5vh !important;
+    /* height: 87.5vh !important; */
     background: url("../images/header-bc.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 .header1{
-    height: 87.5vh !important;
+    /* height: 87.5vh !important; */
     background-color: #0080807c;
 }
 .container{
-    color: whitesmoke;
+    color: teal;
     padding-top: 10vh;
     font-family: 'Montserrat', sans-serif;
 
 }
 .newbie{
     margin-top: 25vh;
+    padding-bottom: 10vh;
 }
 .newbie1{
     margin-top: 3vh;
@@ -53,7 +54,7 @@
     color: teal;
 }
 .MySkills{
-   padding-top: 10vh;
+   padding-top: 8vh;
    justify-content: center;
    display: flex;
 }
@@ -86,5 +87,69 @@
     text-align: right;
 }
 .naya1{
-    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+#contact{
+    /* height: 88vh !important; */
+    background-color: whitesmoke;
+    color: teal;
+}
+.project{
+    padding-top: 7vh; 
+    text-align: center; 
+}
+#about{
+    /* height: 88vh !important; */
+    background-color: whitesmoke;
+    color: teal !important;   
+}
+#about1{
+    color: teal !important;
+}
+.about2{
+    /* padding-top: 1px; */
+   justify-content: center;
+   display: flex;
+}
+.head-bottom{
+    font-size: 20px;
+}
+.navbar-toggler{
+    border-color: teal;
+    color: teal;
+}
+#navbarNav{
+    border-color: teal;
+    color: teal;
+}
+.img{
+    height: 50%;
+    display: block;
+    margin-left: auto;
+     margin-right: auto;
+    width: 50%;
+    margin-top: 5vh;
+}
+.con{
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .con {
+        padding-left: 8vh;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .naya1{
+        transform: rotate(0deg);
+    }
+    .naya{
+        text-align: left;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .con {
+        padding-left: 2vh;
+        font-size: 30px;
+    }
+  }
+  

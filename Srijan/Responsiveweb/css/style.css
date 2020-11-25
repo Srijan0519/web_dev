@@ -1,0 +1,67 @@
+.navbar-brand
+{
+  padding-left: 80px;
+}
+#home
+{
+    background-color: #e9ecef;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width:950px)
+{
+    .navbar-brand{
+        padding-left:0px;
+    }
+    .flex-container1 {
+      flex-direction: row;
+    }
+    .flex-container2{
+      flex-direction: column;
+    }
+}
+
+
+
+.about-us h1
+{
+  text-align: center;
+  padding:3%;
+}
+#card 
+{
+  text-align: center;
+  padding:3%;
+}
+#about img
+{
+    width:100%;
+    height:50vh;
+}
+#contact
+{
+  background-color: #343a40;
+  color: #fff;
+}
+
+input
+{
+  padding: 5px;
+    margin: 10px;
+    width: 100%;
+}
+table
+{
+   margin: 10%;
+   padding: 5%;
+}
+.rcc {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  
+}
+

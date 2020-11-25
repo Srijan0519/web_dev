@@ -1,0 +1,98 @@
+
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.navbar
+{
+    background-image: linear-gradient(to left, #414141, #181818);
+    padding: 5 !important;
+    color: #dcdce5;
+    text-shadow: 1px 0px 0px #dcdce5;
+    font-weight: 500;
+   
+    
+}
+
+
+
+.row{
+    
+    background-color: #dbd9d9;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+}
+
+
+.img-about{
+    max-width: 80%;
+    height: auto;
+}
+
+.txt-about{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-top: 4vh;
+    
+}
+
+#card{
+
+    display: flex;
+    margin: 20px;
+}
+.card-header
+{
+    text-align: center;
+    padding-bottom: 13px;
+    
+}
+.card-line{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-body{
+
+    padding: 2rem;
+}
+
+#contact{
+    background-color: #343a40;
+    
+}
+my-1{
+    padding-right: 9px;
+    padding-bottom: 4px;
+}
+.txt-format{
+    padding-top: 7px;
+}
+ 
+.format-footer{
+padding-top: 20px;    
+} 
+
+.format-form{
+    color: #343a40;
+    
+
+}
+
+.for{
+    margin: 10px;
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.format-icon{
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+}

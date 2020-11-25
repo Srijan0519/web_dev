@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .introduction {
   background-image: url(../images/portfolio.jpg);
   background-position: center center;
@@ -26,17 +29,17 @@
   color: black;
   padding-top: 225px;
   font-size: 30px;
-  padding-left: 500px;
+  text-align: center;
 }
 .tag_line {
   color: whitesmoke;
-  font-size: 300pxpx;
-  padding-left: 500px;
+  font-size: 300px;
+  text-align: center;
 }
 .info {
   color: black;
   font-size: 30px;
-  padding-left: 500px;
+  text-align: center;
   padding-bottom: 350px;
 }
 .about_me {
@@ -50,26 +53,25 @@
 .about_image {
     float: right;
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    margin-bottom: 20px;
+    height: 350px;
+    width: 350px;
+   border-left: 20cm;
+    
 }
 .services {
   background-color: #b5b0b0;
   margin-top: 200px;
-
+  padding-bottom: 1cm;
 }
 .services {
   height: 400px;
 }
 
 .service_line {
-  margin-right: 1100px;
+  margin-right: 26cm;
   border-bottom: 2px solid black;
 }
-.text {
-  padding-left: 200px;
-    padding-right: 100px;
+.text { 
     padding-top: 100px;
 }
 .a1 {
@@ -101,22 +103,14 @@
   background-color:  #282C35;
   color: white;
   margin-top: 70px;
-  padding-bottom: 12cm;
+  padding-bottom: 1 cm;
 }
 
 .web_line {
   border-bottom: 2px solid white;
   margin-right: 22cm;
 }
-.web1 {
-  width: 50%;
-  float: left;
-}
-.web2 {
-  width: 50%;
-  float: right;
-  padding-left: 2cm;
-}
+
 .contact_line {
   border-bottom: 2px solid black;
   margin-right: 26cm;
@@ -127,4 +121,9 @@ footer {
   padding-top: 30px;
   color: white;
   padding-bottom: 30px;
+}
+@media(max-width: 768px) {
+  .web_development {
+    padding-bottom: 2cm;
+  }
 }
