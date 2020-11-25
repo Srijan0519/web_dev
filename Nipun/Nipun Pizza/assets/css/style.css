@@ -1,0 +1,276 @@
+#main-home .header-top .items a{
+    color: black;
+}
+
+#main-home .header-top .items a{
+    color: black;
+}
+#main-home .header-top .items1 a{
+    color: black;
+}
+#main-home .header-top .items2 a{
+    color: black;
+}
+#main-home .header-top .items a:hover{
+    color:   #E1306C;
+}
+
+#main-home .header-top .items1 a:hover{
+    color:   blue;
+}
+#main-home .header-top .items2 a:hover{
+    color:   blue;
+}
+
+
+#main-home{
+    width: 100%;
+    background: url(../img/bg-home.jpg);
+    background-size: 100%;
+    min-height: 650px;
+
+}
+
+.color-pink{
+    background-color: #E1306C;
+   
+}
+
+#main-home .navbar .cart-icon{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+#main-home .navbar .nav-item .nav-link{
+    padding: 0 20px;
+    
+}
+
+#main-home .navbar .nav-item .nav-link{
+    color: black;
+}
+
+#main-home .navbar .nav-item .nav-link:hover{
+    
+    color: #E1306C;
+}
+
+#main-home #banner-slider .owl-carousel .owl-nav button  {
+    position: absolute;
+    top: 30%;
+    outline: none;
+    
+
+}
+
+
+#main-home #banner-slider .owl-carousel .owl-nav button.owl-prev{
+left: 0;
+}
+
+#main-home #banner-slider .owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    }
+
+
+    #main-home #banner-slider .owl-carousel .owl-nav button span{
+        font-size: 56px;
+        padding: 0 1 rem;
+        color: #E1306C;
+    }
+
+
+    #main-home #banner-slider .owl-carousel .owl-nav button.owl-prev span{
+    
+        margin-left: -5rem;
+
+
+    }
+    
+
+
+        #main-home #banner-slider .owl-carousel .owl-nav button.owl-next span {
+            margin-right: -5rem;
+            }
+
+
+            #main-home #banner-slider .owl-carousel .owl-dots{
+                position: absolute;
+                bottom: -6rem;
+                left: 50%;
+                    transform: translateX(-50%);
+            }
+
+
+            #main-home #banner-slider .owl-carousel .owl-dots button span{
+                background-color: #c8c8c8;
+                padding: 6px !important;
+            }
+
+            #main-home #banner-slider .owl-carousel .owl-dots button.active span{
+                background-color: #E1306C;
+                padding: 6px !important;
+            }
+    
+            #main-home #banner-slider .owl-carousel .owl-nav button  {
+                display: none;
+                             
+            
+            }
+
+            #main-home #banner-slider   {
+                width: 100%;
+                margin: auto;
+
+                             
+            
+            }
+            #main-home #banner-slider .owl-carousel .owl-dots{
+                bottom: -2rem;
+                             
+            
+            }
+
+            #main-home{
+                padding: 20px 0;
+            }
+            
+
+
+@media only screen and (max-width:580px)
+{
+    #main-home .header-top
+    {
+        flex-direction: column;
+    }
+} 
+
+.col{
+    color: #E1306C;
+}
+
+.btn-theme{
+    background-color: #E1306C;
+    padding: 5px 20px;
+    color: aliceblue;
+    }
+
+    .btn-theme:hover{   
+    color: white;
+    box-shadow: 0px 0px 0px 4px rgba(255, 0,70, 0.2);   
+    }
+
+
+    .heading{
+        text-align: center;
+    }
+    
+
+    /* entire container, keeps perspective */
+
+.flip-container {
+    -moz-transform: perspective(1000px);
+    perspective: 1000px;
+   }
+   
+   
+   /* flip the pane when hovered */
+   
+   .flip-container.flip .flipper,
+   .flip-container:hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+   }
+   
+   .back,
+   .flip-container,
+   .front {
+    width: 25rem;
+    height: 25rem;
+   }
+   
+   
+   /* flip speed goes here */
+   
+   .flipper {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem auto;
+   }
+   
+   
+   /* hide back of pane during swap */
+   
+   .back,
+   .front {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* this part centers content*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .flipper-content {
+     display: block;
+    }
+   }
+   
+   
+   /* front pane, placed above back */
+   
+   .front {
+    z-index: 2;
+    /* for firefox 31 */
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    .bg-primary {
+     color: white;
+    }
+   }
+   
+   
+   /* back, initially hidden pane */
+   
+   .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+   }
+
+
+   .col-1{
+       color: #E1306C;
+   }
+
+   .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #E1306C;
+  }
+  
+  .button3:hover {
+    background-color: #E1306C;
+    color: white;
+  }
+  
+
+.img-format-1{
+    width: 20rem;
+    height: 20rem;
+}
+
