@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+row{
+    display: flex;
+}
+
+.img-format{
+height: 50vh;
+padding-left: 10vh;
+padding-top: 3vh;
+padding-bottom: 3vh;
+}
+
+.my-1{
+    padding-right: 9vh;
+    padding-bottom: 4vh;
+}
+.txt-format{
+    padding-top: 7vh;
+}
+ 
+.format-footer{
+padding-top: 5vh;    
+} 
+
+.form{
+    color: white;
+    
+
+}
+.form1{
+    margin: 2px;
+    width: 95%;
+    padding-left: 15vh;
+    padding-right: 13vh;
+    
+}
+.copy{
+    color: white;
+}
+
+.format-icon{
+    padding-top: 9vh;
+       padding-left: 18vh;
+    padding-right: 18vh;
+}

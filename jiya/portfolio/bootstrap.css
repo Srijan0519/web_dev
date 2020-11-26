@@ -7,6 +7,12 @@
     font-size: 30px;
 }
 
+@media(max-width:950px)
+{
+    .navbar-logo{
+        padding-left:0px;
+    }
+}
 .middle
 {
     padding: 100px;
@@ -53,7 +59,7 @@
     background-color:#1abc9c;
 }
 .multi-column {
-    font-size: 40px;
+    font-size: 20px;
     -moz-column-count: 2;
     -moz-column-gap: 20px;
     -moz-column-fill: auto;
@@ -65,3 +71,4 @@
     column-fill: auto;
     list-style-position: inside;
  }
+ 
