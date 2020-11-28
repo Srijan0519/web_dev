@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  b0x-sizing: border-box;
+}
+
+.centre {
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+.heading {
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.body {
+  background-color: chartreuse;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.form_element {
+  text-align: center;
+  padding: 10px;
+}
+
+input {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: darkgray;
+}
+.form_btn {
+  margin-right: 90px;
+  text-align: right;
+}
+
+.btn {
+  background-color: darkgreen;
+  color: darkkhaki;
+  border: none;
+  outline: none;
+  padding: 6px 15px 6px 15px;
+  border-radius: 15px;
+}
