@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-home{
+    width: 100%;
+    min-height: 650px;
+    background-image: url(./image/bg-home.jpg);
+    background-size: 100% 100%;
+}
+
+/*-------------------------nav bar-------------------------*/
+
+.header-top .items a{
+    color: black;
+}
+
+.header-top .items a :hover{
+    color: #ff004d;
+    background-color: #fff;
+}
+
+.cart-icon {
+    padding: 5px 10px !important;
+    background-color:  #FF004D;
+    border-radius: 5px;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #000000;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #FF004D;
+}
+.btn{
+
+    color: white;
+    background-color: #FF004D;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.btn :hover{
+
+    box-shadow: #FF004D  ;
+}
