@@ -22,7 +22,7 @@ body {
 
 .header-top .items a :hover{
     color: #ff004d;
-    background-color: #fff;
+    background-color: ##c8c8c8;
 }
 
 .cart-icon {
@@ -42,9 +42,11 @@ body {
 .navbar .nav-item .nav-link:hover {
     color: #FF004D;
 }
+
+/*--------------------------------------banner-----------------------------*/
 .btn{
 
-    color: white;
+    color:#c8c8c8;
     background-color: #FF004D;
     padding-left: 20px;
     padding-right: 20px;
@@ -54,4 +56,54 @@ body {
 .btn :hover{
 
     box-shadow: #FF004D  ;
+}
+
+#demo
+{
+ padding-top: 2%;
+  align-content: center;
+  width: auto;
+    
+  max-height: auto;
+ padding-right: 2rem;
+ padding-left: 2rem;
+ padding-bottom: 1rem;
+ 
+}
+
+.carousel
+{
+
+    margin-top: 3rem;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px 10px 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #c8c8c8;    
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px 0 10px;
+    background-color: #ff004d;
+}
+
+.carousel-control-prev .fas{
+    margin-right: 10rem;
+    width: 10rem;
+    height: 10rem;
+    color: #ff004d;
+}
+
+.carousel-control-next .fas{
+    margin-left: 10rem;
+    width: 10rem;
+    height: 10rem;
+    color: #ff004d;
 }
