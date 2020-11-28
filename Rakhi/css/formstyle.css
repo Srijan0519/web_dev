@@ -39,7 +39,7 @@ footer
   margin-left: 450px; 
   margin-top: 20px;
 }
-footer input[type=button]
+footer input[type=reset]
 {
   width: 80px;
   background-color: red;
