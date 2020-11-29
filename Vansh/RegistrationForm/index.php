@@ -60,20 +60,56 @@
                             <input class="input--style-3" type="text" placeholder="Phone" name="phone">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="Password" name="Password">
+                            <input class="input--style-3" type="password" placeholder="password" name="password">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="password" placeholder="Enter Your Password Again" name="repeatpass">
                         </div>
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Sign Up</button>
+                            <button class="btn btn--pill btn--green" type="submit" name="submit">Sign Up</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
+   
+    <?php
+ $servername='localhost';
+ $username='root';
+ $password='';
+ $dbname = "userinfo";
+ $conn = mysqli_connect($servername,$username,$password,"userinfo");
+   if(!$conn){
+       die('Could not Connect MySql Server:' .mysql_error());
+     }
 
+
+
+if(isset($_POST['submit']))
+{    
+     $name = $_POST['name'];
+     echo $dob = $_POST['birthday'];
+     $gender = $_POST['gender'];
+     $email = $_POST['email'];
+     $phone = $_POST['phone']; 
+     $pass = $_POST['password'];
+     $repeatpass = $_POST['repeatpass'];
+
+    
+    $sql = "INSERT INTO signup (`Name`, `dob`, `gender`, `email`, `phone`, `password`)
+    VALUES ('$name','$dob','$gender','$email','$phone','$pass')";
+    
+    $result = mysqli_query($conn, $sql);
+    if($result) {
+        echo "New record has been added successfully !";
+     } else {
+        echo "Error: " . $sql . ":-" . mysqli_error($conn);
+     }
+     mysqli_close($conn);
+    }
+?>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
