@@ -1,0 +1,28 @@
+.img-format{
+    
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+
+    }
+.img-format-1{
+    
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+    float: right;
+}
+.back-1{
+    width: 100vh;
+    height: 20vh;
+    clip-path: polygon(0 0, 100% 0, 70% 26%, 93% 48%, 70% 73%, 100% 100%, 0 100%, 0% 20%);
+    border-radius: 50%rem 0px 0px 50%;
+}
+
+.back-2{
+    width: 100vh;
+    height: 20vh;
+    clip-path: polygon(7% 48%, 30% 26%, 0 0, 100% 0, 100% 44%, 100% 100%, 0 97%, 30% 74%);
+    margin-left: 17rem;
+}
+
