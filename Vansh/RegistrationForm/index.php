@@ -90,25 +90,40 @@
 if(isset($_POST['submit']))
 {    
      $name = $_POST['name'];
-     echo $dob = $_POST['birthday'];
+     $dob = $_POST['birthday'];
      $gender = $_POST['gender'];
      $email = $_POST['email'];
      $phone = $_POST['phone']; 
      $pass = $_POST['password'];
      $repeatpass = $_POST['repeatpass'];
-
+     
+     $day = substr($dob, 0, 2);
+     $month = substr($dob, 3, 2);
+     $year = substr($dob, 6, 4);
+     $date = $year."-".$month."-".$day;
+     
     
     $sql = "INSERT INTO signup (`Name`, `dob`, `gender`, `email`, `phone`, `password`)
-    VALUES ('$name','$dob','$gender','$email','$phone','$pass')";
+    VALUES ('$name','$date','$gender','$email','$phone','$pass')";
     
     $result = mysqli_query($conn, $sql);
-    if($result) {
-        echo "New record has been added successfully !";
-     } else {
-        echo "Error: " . $sql . ":-" . mysqli_error($conn);
-     }
-     mysqli_close($conn);
-    }
+    $error = mysqli_error($conn);
+    if ($pass != $repeatpass) {
+        echo "<script> alert ('passwords do not match') </script>";
+        }
+    else {
+        
+        if($result) {
+            echo "<script> alert('New record has been added successfully !') </script>";
+        
+        } else {
+            echo "<script> alert ($error) </script>";
+         }
+               
+         }
+         mysqli_close($conn);
+        }
+    
 ?>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
