@@ -36,15 +36,15 @@
                     <h2 class="title">Registration Info</h2>
                     <form method="POST">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+                            <input class="input--style-3" type="text" placeholder="Name" name="name" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday" required>
                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
+                                <select name="gender" required>
                                     <option disabled="disabled" selected="selected">Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
@@ -54,16 +54,16 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="number" placeholder="Phone" name="phone" minlength="10" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="password" name="password">
+                            <input class="input--style-3" type="password" placeholder="password" name="password" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="Enter Your Password Again" name="repeatpass">
+                            <input class="input--style-3" type="password" placeholder="Enter Your Password Again" name="repeatpass" required>
                         </div>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit" name="submit">Sign Up</button>
