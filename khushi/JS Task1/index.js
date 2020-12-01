@@ -7,19 +7,19 @@ function getUserRole(namee, role)
 {
 
     switch(role){
-                    case admin:
+                    case "admin":
                         alert("your name is"+namee"and you have all access");
                         break;
-                    case subadmin:
+                    case "subadmin":
                         alert("your name is"+namee"and you have access to create/delete courses");
                         break;
-                    case testprep:
+                    case "testprep":
                         alert("your name is"+namee"and you have access to create/delete tests");
                         break;
-                    case user:
+                    case "user":
                         alert("your name is"+namee"and you have access to all courses");
                         break;
-                    case other:
+                    case "other":
                         alert("your name is"+namee"and you have access to trial version");
                     default:
                         alert("your name is"+namee"and you have access to trial version");
