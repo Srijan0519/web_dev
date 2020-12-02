@@ -2,34 +2,54 @@
     
     height: 20vh;
     width: 20vh;
-    border-radius: 50%;
+    border-radius: 100%;
+    margin-right: 5rem;
+    
+    
+
 
     }
+
 .img-format-1{
     
     height: 20vh;
     width: 20vh;
     border-radius: 100%;
     margin-left: 2rem;
+    
    
 }
-.back-1{
+.back-1{ 
     width: 100vh;
     height: 20vh;
     clip-path: polygon(0 0, 100% 0, 70% 26%, 93% 48%, 70% 73%, 100% 100%, 0 100%, 0% 20%);
-    border-top-left-radius: 100%;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius:120px ;
+
+
 }
 
 .back-2{
     width: 100vh;
     height: 20vh;
     clip-path: polygon(7% 48%, 30% 26%, 0 0, 100% 0, 100% 44%, 100% 100%, 0 97%, 30% 74%);
-    margin-left: 17rem;
+    margin-left: 20rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius:100px ; 
+   
 }
 
+.txt{
+    padding-right: 20rem;
+    text-align: center  ;
+    width: 20px;
+} 
 .for-text{
 
    text-align: center;
+
+
+   
     
 }
 
@@ -37,5 +57,11 @@
     text-align: center;
         
     
-    margin-left: 11.9rem;
+    margin-left: 15rem;
 }
+
+ 
+.img-f{
+   padding-right: 100rem;
+} 
+

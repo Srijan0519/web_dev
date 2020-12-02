@@ -3,7 +3,7 @@
 	{
 		$host="localhost";
 		$user="root";
-		$password="";
+		$p assword="";
 		$db="Register";
 	
 		$check=mysqli_connect($host,$user,$password,$db);
