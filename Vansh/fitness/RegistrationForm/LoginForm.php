@@ -24,7 +24,7 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
-    
+
 </head>
 
 <body>
@@ -36,37 +36,60 @@
                     <h2 class="title">Login</h2>
                     <form method="POST">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="password" placeholder="Password" name="pass" required>
                         </div>
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                            <button class="btn btn--pill btn--green" type="submit" name="LogIn">Log In</button>
                         </div>
+                        <div class="a" style="color: white; padding-top: 20px;">
+                            New to our website? Sign Up <a href="index.php">here</a>
+                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <?php
+    $servername = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname = "userinfo";
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    if (!$conn) {
+        die('Could not Connect MySql Server:' . mysql_error());
+    }
+
+    if (isset($_POST['LogIn'])) {
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+        $retrieve = "SELECT * FROM `signup` WHERE email = '$email' AND password = '$pass'";
+        $ret = mysqli_query($conn, $retrieve);
+        $rowcount = mysqli_num_rows($ret);
+
+        $retemail = "SELECT * FROM `signup` WHERE email = '$email'";
+        $retmail = mysqli_query($conn, $retemail);
+        $rowmail = mysqli_num_rows($retmail);
+        if ($rowcount > 0) {
+            echo "<script> alert('You Are Sucessfully logged in!') </script>";
+            session_start();	
+    $_SESSION['login_status']=true;
+    $_SESSION['email'] = $row['email'];
+        } else {
+            
+            if ($rowmail > 0) {
+                echo "<script> alert('Incorrect password!') </script>";
+            } else {
+                if($rowmail==0){
+                echo "<script> alert('You need to log in first!') </script>";
+                }
+            }
+        }
+        mysqli_close($conn);
+    }
+    ?>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>

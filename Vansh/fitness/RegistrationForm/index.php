@@ -57,16 +57,22 @@
                             <input class="input--style-3" type="email" placeholder="Email" name="email" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="number" placeholder="Phone" name="phone" minlength="10" required>
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone" pattern="[0-9]{11}"  required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="password" name="password" required>
+                            <input class="input--style-3" type="password" placeholder="password" name="password"    required>
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="password" placeholder="Enter Your Password Again" name="repeatpass" required>
                         </div>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit" name="submit">Sign Up</button>
+                        </div>
+                        <div class="a" style="color: white; padding-top: 20px">
+                            Already a member? Log In <a href="LoginForm.php" >here</a>
+                        </div>
+                        <div class="b" style="color: white; padding-top: 20px">
+                            You can find our full info <a href="../fitness/index.html">here</a>
                         </div>
                     </form>
                 </div>
@@ -80,12 +86,11 @@
  $username='root';
  $password='';
  $dbname = "userinfo";
- $conn = mysqli_connect($servername,$username,$password,"userinfo");
+ $conn = mysqli_connect($servername,$username,$password,$dbname);
    if(!$conn){
        die('Could not Connect MySql Server:' .mysql_error());
      }
-
-
+     
 
 if(isset($_POST['submit']))
 {    
@@ -102,17 +107,29 @@ if(isset($_POST['submit']))
      $year = substr($dob, 6, 4);
      $date = $year."-".$month."-".$day;
      
+     $retrieve = "SELECT * FROM `signup` WHERE email = '$email'";
+     $ret = mysqli_query($conn, $retrieve);
+     $rowcount=mysqli_num_rows($ret);
+     
     
-    $sql = "INSERT INTO signup (`Name`, `dob`, `gender`, `email`, `phone`, `password`)
-    VALUES ('$name','$date','$gender','$email','$phone','$pass')";
+   
     
-    $result = mysqli_query($conn, $sql);
-    $error = mysqli_error($conn);
+    if ($rowcount > 0){
+        echo "<script> alert('email already exists!')</script>";
+        
+    }
+    else {
     if ($pass != $repeatpass) {
         echo "<script> alert ('passwords do not match') </script>";
+        
         }
     else {
+        $sql = "INSERT INTO signup (`Name`, `dob`, `gender`, `email`, `phone`, `password`)
+        VALUES ('$name','$date','$gender','$email','$phone','$pass')";
+        $result = mysqli_query($conn, $sql);
+        $error = mysqli_error($conn);
         
+       
         if($result) {
             echo "<script> alert('New record has been added successfully !') </script>";
         
@@ -121,7 +138,10 @@ if(isset($_POST['submit']))
          }
                
          }
+        }
+        
          mysqli_close($conn);
+        
         }
     
 ?>
