@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['login_status']==true){
+    header("Location: ../index1.php");
+}
+else{
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +53,10 @@
                         </div>
                         <div class="a" style="color: white; padding-top: 20px;">
                             New to our website? Sign Up <a href="index.php">here</a>
-                         </div>
+                        </div>
+                        <div class="b" style="color: white; padding-top: 20px">
+                            You can find our complete information <a href="../index1.php">here</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -74,16 +84,18 @@
         $rowmail = mysqli_num_rows($retmail);
         if ($rowcount > 0) {
             echo "<script> alert('You Are Sucessfully logged in!') </script>";
-            session_start();	
-    $_SESSION['login_status']=true;
-    $_SESSION['email'] = $row['email'];
-        } else {
             
+            $_SESSION['email'] = $email;
+            $_SESSION['login_status'] = true;
+            
+            header("Location: ../index1.php");
+        } else {
+
             if ($rowmail > 0) {
                 echo "<script> alert('Incorrect password!') </script>";
             } else {
-                if($rowmail==0){
-                echo "<script> alert('You need to log in first!') </script>";
+                if ($rowmail == 0) {
+                    echo "<script> alert('You need to sign up first!') </script>";
                 }
             }
         }
@@ -106,3 +118,6 @@
 
 </html>
 <!-- end document-->
+<?php
+}
+?>
