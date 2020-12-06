@@ -1,0 +1,47 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.divider
+{
+    border-color:rgb(226, 52, 52);
+    border-width: 10px;
+    margin-left:180px;
+    margin-right:180px;
+}
+.style
+{
+  color:red;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 50px;
+  align-items: center;
+  margin-top:150px;
+}
+
+.portfolio
+{
+    margin-top:100px;
+    margin-bottom:-100px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
+}
+.btn
+{
+    background-color: orange;
+    border: 0px;
+    margin-left:20px;
+}
+.btn:hover
+{
+    opacity:0.5;
+}
