@@ -1,4 +1,35 @@
+<?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = "userinfo";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    die('Could not Connect MySql Server:' . mysql_error());
+}
+session_start();
+if(isset($_SESSION['login_status'])){
+    echo "";
+}
+else {
+$_SESSION['login_status'] = false;
+}
+$email = $_SESSION['email'];
 
+
+$query = "SELECT Name FROM `signup` WHERE email = '$email'";
+$retrievedName = mysqli_query($conn, $query);
+$name = mysqli_fetch_assoc($retrievedName);
+// if ($retrievedName->num_rows > 0) {
+//     // output data of each row
+//     while ($row = $retrievedName->fetch_assoc()) {
+
+//         echo "Name: " . $row["Name"];
+//     }
+// } else {
+//     echo "0 results";
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,8 +97,13 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     } else {
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link disabled" style="color: white;">Welcome, User</a>
-                        </li>
+                            <a class="nav-link disabled" style="color: white;">Welcome
+                            <?php
+                        // print_r ($name);
+                        echo "user";
+                        ?>
+                        </a>
+                        
 
                         <li class="nav-item">
 
@@ -90,41 +126,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
         </div>
     </nav>
 
-    <?php
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = "userinfo";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die('Could not Connect MySql Server:' . mysql_error());
-}
-session_start();
-
-$email = $_SESSION['email'];
-?>
-<h1 style="color: white;">
-<?php
-// echo $email;
-echo "lorem";
-?></h1>
-<?php
-echo "<style color: white;>";
-echo $email;
-echo "</style>";
-$name = "SELECT Name FROM `signup` WHERE email = '$email'";
-$retrievedName = mysqli_query($conn, $name);
-
-// if ($retrievedName->num_rows > 0) {
-//     // output data of each row
-//     while ($row = $retrievedName->fetch_assoc()) {
-
-//         echo "Name: " . $row["Name"];
-//     }
-// } else {
-//     echo "0 results";
-// }
-?>
+    
     <!-- HERO -->
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
