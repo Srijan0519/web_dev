@@ -17,6 +17,20 @@
         // Taking data into variables
 		$email=$_POST['email'];
         $pass=$_POST['password'];
+        
+		// Checking whether data already exist or not
+		
+		if($email=="admin@gmail.com"&&$pass=="admin1")
+		{
+			echo "Hii<br>";
+			session_start();
+			$_SESSION['login_status']=true;
+			$_SESSION['email'] = $email;
+		    $_SESSION['password']=$pass;
+			header('location:home.php');
+		}
+		else
+		{	
 
         // Password Encryption
         $encrypt = password_hash('$pass',PASSWORD_BCRYPT);
@@ -24,28 +38,27 @@
         // Sql Query
 		$ValidEmail="SELECT * FROM User WHERE Email='$email'";
 		$result=mysqli_query($check,$ValidEmail);
-        $passans=$result->fetch_array(MYSQLI_ASSOC);
-        
-        // Checking whether data already exist or not
-		if($result->num_rows==0)
-		{
-		   echo '<script>alert("Please Sign up First")</script>';
-		}else
-		{ 
-            // Password Decryption
-		  if(password_verify('$pass', $encrypt))
-		  {
-                echo '<script>alert("You are successfully Logged in")</script>';
-                
-                // Session
-				session_start();
-				 $_SESSION['login_status']=true;
-                 $_SESSION['email'] = $email;
-                 header('location:UserPortfolio.php');
-		  }else{
-			  $wrong="Wrong Password";
-		  }
-		}
+        $passans=$result->fetch_array(MYSQLI_ASSOC);	
+			if($result->num_rows==0)
+			{
+				echo '<script>alert("Please Sign up First")</script>';
+			}else
+				{ 
+						// Password Decryption
+					if(password_verify('$pass', $encrypt))
+					{
+							echo '<script>alert("You are successfully Logged in")</script>';
+							
+							// Session
+							session_start();
+							$_SESSION['login_status']=true;
+							$_SESSION['email'] = $email;
+								header('location:UserPortfolio.php');
+					}else{
+						$wrong="Wrong Password";
+					}
+			   }
+		}	   
 
 	}
 ?>
