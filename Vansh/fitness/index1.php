@@ -9,17 +9,23 @@ if (!$conn) {
 }
 session_start();
 if(isset($_SESSION['login_status'])){
-    echo "";
+    $email = $_SESSION['email'];
+    $namequery = "SELECT Name FROM `signup` WHERE email = '$email'";
+$executename = mysqli_query($conn, $namequery);
+$fetchname = mysqli_fetch_assoc($executename);
+
+    
+    
+$name = implode("=>", $fetchname);
 }
 else {
 $_SESSION['login_status'] = false;
 }
-$email = $_SESSION['email'];
 
 
-$query = "SELECT Name FROM `signup` WHERE email = '$email'";
-$retrievedName = mysqli_query($conn, $query);
-$name = mysqli_fetch_assoc($retrievedName);
+
+
+    
 // if ($retrievedName->num_rows > 0) {
 //     // output data of each row
 //     while ($row = $retrievedName->fetch_assoc()) {
@@ -99,8 +105,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
                         <li class="nav-item">
                             <a class="nav-link disabled" style="color: white;">Welcome
                             <?php
-                        // print_r ($name);
-                        echo "user";
+                        print ($name);
+                        // echo "user";
                         ?>
                         </a>
                         
