@@ -1,15 +1,13 @@
 var array=[1,2,3]
 
-var num=document.getElementById('#num');
+var num=document.getElementById("num").value;
 
-addNum(num);
 
-function addNum(numm)
-{
-array.push(numm);
+function addNum(num)
+{  
+array.push(num);
 console.log(array);
-    
-    }
+      }
 
     
 function popNum()
