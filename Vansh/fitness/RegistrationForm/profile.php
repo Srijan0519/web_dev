@@ -1,10 +1,9 @@
 <?php
 session_start();
-if($_SESSION['login_status']==false){
+if ($_SESSION['login_status'] == false) {
     header("Location: ../index1.php");
-}
-else{
-    ?>
+} else {
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -35,59 +34,6 @@ else{
     </head>
 
     <body>
-        <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-            <div class="wrapper wrapper--w780">
-                <div class="card card-3">
-                    <div class="card-heading"></div>
-                    <div class="card-body">
-                        <h2 class="title">Registration Info</h2>
-                        <form method="POST">
-                            <div class="input-group">
-                                <input class="input--style-3 d" type="text" placeholder="Name" name="name" required>
-                            </div>
-                            <div class="input-group">
-                                <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday" required>
-                                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                            </div>
-                            <div class="input-group">
-                                <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="gender" required>
-                                        <option disabled="disabled" selected="selected">Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                        <option>Other</option>
-                                    </select>
-                                    <div class="select-dropdown"></div>
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <input class="input--style-3 disabled" type="email" placeholder="Email" name="email" >
-                            </div>
-                            <div class="input-group">
-                                <input class="input--style-3" type="text" placeholder="Phone" name="phone" pattern="[0-9]{11}" required>
-                            </div>
-                            <div class="input-group">
-                                <input class="input--style-3" type="password" placeholder="password" name="password" required>
-                            </div>
-                            <div class="input-group">
-                                <input class="input--style-3" type="password" placeholder="Enter Your Password Again" name="repeatpass" required>
-                            </div>
-                            <div class="p-t-10">
-                                <button class="btn btn--pill btn--green" type="submit" name="submit">Sign Up</button>
-                            </div>
-                            <div class="a" style="color: white; padding-top: 20px">
-                                Already a member? Log In <a href="LoginForm.php">here</a>
-                            </div>
-                            <div class="b" style="color: white; padding-top: 20px">
-                                You can find our complete information <a href="../index1.php">here</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <?php
         $servername = 'localhost';
         $username = 'root';
@@ -97,53 +43,66 @@ else{
         if (!$conn) {
             die('Could not Connect MySql Server:' . mysql_error());
         }
-        
 
-        if (isset($_POST['submit'])) {
-            $name = $_POST['name'];
-            $dob = $_POST['birthday'];
-            $gender = $_POST['gender'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $pass = $_POST['password'];
-            $repeatpass = $_POST['repeatpass'];
-
-            $day = substr($dob, 0, 2);
-            $month = substr($dob, 3, 2);
-            $year = substr($dob, 6, 4);
-            $date = $year . "-" . $month . "-" . $day;
-
-            $retrieve = "SELECT * FROM `signup` WHERE email = '$email'";
-            $ret = mysqli_query($conn, $retrieve);
-            $rowcount = mysqli_num_rows($ret);
-
-
-
-
-            if ($rowcount > 0) {
-                echo "<script> alert('email already exists!')</script>";
-            } else {
-                if ($pass != $repeatpass) {
-                    echo "<script> alert ('passwords do not match') </script>";
-                } else {
-                    $sql = "INSERT INTO signup (`Name`, `dob`, `gender`, `email`, `phone`, `password`)
-        VALUES ('$name','$date','$gender','$email','$phone','$pass')";
-                    $result = mysqli_query($conn, $sql);
-                    $error = mysqli_error($conn);
-
-
-                    if ($result) {
-                        echo "<script> alert('New record has been added successfully !') </script>";
-                    } else {
-                        echo "<script> alert ($error) </script>";
-                    }
-                }
-            }
-
-            mysqli_close($conn);
-        }
-
+        $email = $_SESSION['email'];
+        $result = mysqli_query($conn, "SELECT * FROM `signup` WHERE email = '$email'");
+        $i = 0;
+        while ($row = mysqli_fetch_array($result)) {
         ?>
+
+            <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+                <div class="wrapper wrapper--w780">
+                    <div class="card card-3">
+                        <div class="card-heading"></div>
+                        <div class="card-body">
+                            <h2 class="title">Profile</h2>
+                            <form method="POST">
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Name: <?php echo $row["Name"]; ?>" readonly="readonly">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Birthdate: <?php echo $row["dob"]; ?>" readonly="readonly">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Gender: <?php echo $row["gender"]; ?>" readonly="readonly">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Email: <?php echo $row["email"]; ?>" readonly="readonly">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Phone: <?php echo $row["phone"]; ?>" readonly="readonly">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Joined: <?php echo $row["joindate"]; ?>" readonly="readonly">
+                                </div>
+
+                                <?php
+
+                                if ($_SESSION['email'] == "Vanshbisht@gmail.com") {
+                                ?>
+                                    <div class="p-t-10">
+                                        <a href="../data.php">
+                                            <div class="btn btn--pill btn--green">User Info</div>
+                                        </a>
+                                    </div>
+                                <?php
+                                }
+                                ?>
+
+                                <div class="b" style="color: white; padding-top: 20px">
+                                    Navigate back to home page <a href="../index1.php">here</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php
+            $i++;
+        }
+        ?>
+
+
         <!-- Jquery JS-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <!-- Vendor JS-->
@@ -159,7 +118,7 @@ else{
 
     </html>
     <!-- end document-->
-    <?php
+<?php
 }
 
 ?>
