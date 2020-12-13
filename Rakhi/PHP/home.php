@@ -93,8 +93,27 @@ body
                                die(mysqli_connect_error());
                             }
                             session_start();
-       
-                    if(isset($_SESSION['login_status']))
+
+                    if(!isset($_SESSION['login_status']))
+                    {
+                        echo '<a class="btn  btn-xl js-scroll-trigger" href="portfoliosignup.php">Sign up</a>';
+                        echo '<a class="btn btn-xl js-scroll-trigger" href="portfoliosignin.php">Sign in</a>';                        
+                    }else if($_SESSION['email']=="admin@gmail.com"&&$_SESSION['password']=='admin1'&&isset($_SESSION['login_status']))
+                    {
+                        $_SESSION['email'];
+                        $_SESSION['password'];
+                        $id="SELECT * FROM User" ; 
+                        $result=mysqli_query($check,$id);
+                        echo  " <table border='2px' bordercolor='red' style='font-size:20px;margin-left:-50px;'><tr style='color:green;'><th>ID</th><th>Name</th><th>Email</th><th>School</th><th>10th %</th><th>12th %</th><th>University</th><th>Graduation Course</th><th>HTML</th><th>CSS</th><th>JAVA</th><th>BOOTSTRAP</th><th>C</th></tr> ";
+                        while($row = $result->fetch_array(MYSQLI_ASSOC))
+
+                            {
+                                echo "<tr style='color:white;'><td>" . $row["ID"]. "</td><td>" . $row["First Name"]. " " . $row["Last Name"]. "</td><td>".$row["Email"]."</td><td>".$row["School"]."</td><td>".$row['10th %']."</td><td>".$row['12th %']."</td><td>".$row['University']."</td><td>".$row['Graduation Course']."</td><td>".$row['html']."</td><td>".$row['css']."</td><td>".$row['java']."</td><td>".$row['bootstrap']."</td><td>".$row['c']."</td></tr>";
+                            }
+
+                            echo "</table><br>";
+                            echo '<a href="logout.php"><button class="btn my-2 my-sm-0 styling" name="logout">Logout</button></a>';
+                    }else
                     {
                         $email=$_SESSION['email'];
                         $id="SELECT * FROM User WHERE Email='$email'"; 
@@ -104,11 +123,7 @@ body
                         $lastname=$passans['Last Name'];
                         echo "<p style='color:blue;font-size:40px;'>Welcome ".$firstname." ".$lastname."<br>"."<br>"."</p>";
                     echo '<a class="btn btn-xl js-scroll-trigger" href="UserPortfolio.php">Profile</a>';
-                    echo '<a href="logout.php"><button class="btn my-2 my-sm-0 styling" name="logout">Logout</button></a>';
-                    }else
-                    {
-                        echo '<a class="btn  btn-xl js-scroll-trigger" href="portfoliosignup.php">Sign up</a>';
-                        echo '<a class="btn btn-xl js-scroll-trigger" href="portfoliosignin.php">Sign in</a>';
+                    echo '<a href="logout.php"><button class="btn my-2 my-sm-0 styling" name="logout">Logout</button></a>';                        
                     }
                     ?>
                 </div>
