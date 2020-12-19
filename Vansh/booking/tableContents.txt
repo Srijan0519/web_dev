@@ -1,0 +1,17 @@
+srno
+flight no
+pilot details
+	srno
+	id
+	name
+	age
+	contact
+departure time
+arrival time
+origin place
+destination 
+flight provider
+cost
+no. of seats available
+flight type
+
