@@ -1,0 +1,162 @@
+.box
+{
+   background-color: white;
+   height: 15px;
+    width:1000px;
+    margin-left: 850px; 
+    
+}
+.heading
+{
+   animation: colorchange 10s infinite alternate;
+  
+   font-weight: bolder;
+   font-size: 8rem;
+   font-style: italic;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-left: 800px; 
+   margin-top:-40rem;
+}
+
+@keyframes colorchange {
+   0% {
+     color: blue;
+   }
+   10% {
+     color: #8e44ad;
+   }
+   20% {
+     color: #1abc9c;
+   }
+   30% {
+     color: #d35400;
+   }
+   40% {
+     color: blue;
+   }
+   50% {
+     color: #34495e;
+   }
+   60% {
+     color: blue;
+   }
+   70% {
+     color: #2980b9;
+   }
+   80% {
+     color: #f1c40f;
+   }
+   90% {
+     color: #2980b9;
+   }
+   100% {
+     color: pink;
+   }
+ }
+
+
+.image
+{
+    margin-top:10rem ;
+   margin-left: 100px;
+   
+}
+.jump
+{    
+   position:relative; 
+   height: 15px;
+    width:100px;
+   margin-left: 0px; 
+    margin-top: 100px;
+    animation-name: jumping;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes jumping
+{
+  
+   0%
+   {
+     
+      background-color:blue;
+      height: 15px;
+      width:100px;
+   }
+   10%
+   {
+     
+      background-color:#8e44ad;
+      height: 15px;
+      width:200px;
+   } 
+   20%
+   {
+   
+      background-color:#1abc9c;
+      height: 15px;
+      width:300px;
+   } 
+   30%
+   {
+      
+      background-color: #d35400;
+      height: 15px;
+      width:400px;
+   } 
+   40%
+   {
+      
+      background-color: blue;
+      height: 15px;
+      width:500px;
+   } 
+
+   50%
+   {
+      background-color: black;
+      height: 15px;
+      width:600px;
+     
+   }
+   60%
+   {
+     
+      background-color: blue;
+      height: 15px;
+      width:700px;
+   } 
+   70%
+   {
+     
+      background-color: #2980b9;
+      height: 15px;
+      width:800px;
+   }
+   80%
+   {
+      
+      background-color: #f1c40f;
+      height: 15px;
+      width:900px;
+   } 
+   90%
+   {
+     
+      background-color:#2980b9;
+      height: 15px;
+      width:1000px;
+   } 
+   100%
+   {
+      
+      background-color:pink;
+      height : 15px;
+      width : 1000px;
+      
+
+   }
+
+}
