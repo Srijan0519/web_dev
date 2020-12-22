@@ -8,7 +8,8 @@
 }
 .heading
 {
-   animation: colorchange 10s infinite alternate;
+   animation: colorchange 10s infinite;
+   position:relative;
   
    font-weight: bolder;
    font-size: 8rem;
