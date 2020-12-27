@@ -1,0 +1,65 @@
+.body{
+    background-color: darkgrey;
+}
+.h1
+{
+    font-size: 70px;
+    text-align: center;
+    color:purple;
+    
+}    
+.hr1
+{
+    height:40px;
+    color: crimson;
+    background-color:red;
+}
+.hr2
+{
+    height:40px;
+    color: black;
+        background-color:black;
+}
+
+.form
+{
+       font-size: 20px;
+    color:black ;
+}
+
+.button{
+        text-align: center;
+  color:black;
+  size: 10rem;
+  padding: 15px 32px;
+  border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.heading{
+    text-align:center;
+    background-color: pink;
+}
+.para
+{
+font-size: 20px;
+background-color: yellow;
+}
+.info
+{
+    font-size: 20px;
+    background-color: teal;
+    padding: 10px;
+}
+.rollno
+{
+    font-size: 30px;
+      font-weight: 800;
+      color: blue;
+}
+.qual
+{
+    font-size: 20px;
+    background-color: tomato;
+    
+}

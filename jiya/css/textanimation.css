@@ -1,0 +1,73 @@
+
+ 
+.first
+{
+    margin-top: 15%; 
+    color: rgb(160, 160, 160);
+   animation-duration: 2s;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 500%;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-name: light;
+    text-align: center;
+    animation-delay:2s ;
+}
+.second
+{
+    color: rgb(160, 160, 160);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-delay:4s ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 500%;
+    text-align: center;
+    animation-name: light2; 
+}
+.third
+{
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-duration: 2s;
+    color: rgb(160, 160, 160);
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 500%;
+    text-align: center;
+    animation-delay:6s ;
+    animation-name: light3;   
+}
+
+@keyframes light
+{
+    from
+    {
+        color:rgb(160, 160, 160) ;
+    }
+   to 
+   {
+       color:black;
+   }
+}
+@keyframes light2
+{
+    from
+    {
+        color:rgb(160, 160, 160) ;
+    }
+   to 
+   {
+       color:black;
+   }
+}
+@keyframes light3
+{
+    from
+    {
+        color:rgb(160, 160, 160) ;
+    }
+   to 
+   {
+       color:black;
+   }
+}

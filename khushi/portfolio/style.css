@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+    background-image: url(./graphics/image1.jpg);
+
+}
+/* -----------------------------------------nav bar Section------------------------------------------ */
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    
+}
+.navbar
+{
+    background-image: linear-gradient(to left, #403b4a, #8c90b1);
+    padding: 5 !important;
+    text-shadow: 1px 1px 0px #dcdce5;
+    font-weight: 500;
+   
+    
+}
+
+/* -----------------------------------------Banner Section------------------------------------------ */
+
+#banner
+{
+    padding: 10 !important;
+
+}
+
+
+.promo-title
+{
+    text-shadow: 5px 4px 2px #332e3d;
+    font-family: Verdana  ;
+    color: #dcdce5;
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+.designation
+{
+    font-family: Verdana  ;
+    color: #dcdce5;
+    text-shadow: 2px 2px 2px #332e3d;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 50px
+}
+.prof-pic
+{
+    width: 40%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 300%;
+    border-radius: 100%;
+    margin-top:10%;
+    
+    
+    
+    
+    box-shadow: 3px 6px 5px  #403b4a;
+    -moz-border-radius:100px;
+    
+}
+/* -----------------------------------------crousel Section------------------------------------------ */
+.d-block 
+{   
+    width: auto;
+  
+    height: auto;
+    margin-left: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+
+}
+
+#carouselExampleIndicators
+{
+
+  align-content: center;
+  width: auto;
+    
+  max-height: auto;
+ padding-right: 4rem;
+ padding-left: 4rem;
+ padding-bottom: 1rem;
+
+}
+
+.About-title
+{
+
+    text-shadow: 5px 4px 2px #332e3d;
+    font-family: AR BERKLEY  ;
+    color: #dcdce5;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 3px;
+    margin-left: 35%;
+}
+.about
+{
+    font-family: Verdana  ;
+    color: #dcdce5;
+    text-shadow: 2px 2px 2px #332e3d;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-left: 10px;
+
+}
+.skills-title
+{
+    text-shadow: 5px 4px 2px #332e3d;
+    font-family: AR BERKLEY ;
+    color: #dcdce5;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 3px;
+    margin-left: 40%;
+
+}
+ul#skills li 
+{
+    list-style-type: circle;
+    font-family: Verdana  ;
+    color: #dcdce5;
+    text-shadow: 2px 2px 2px #332e3d;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+/* -----------------------------------------footer Section------------------------------------------ */
+
+#footer
+{
+    padding: 10 !important;
+}
+
+.form-group
+{
+    font-family: Verdana  ;
+    color: #dcdce5;
+    padding: 10px !important;
+    font-size:15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 80px !important;
+
+}
+.form-group
+{
+    width: auto;
+    
+    height: 20px;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 10%;
+    margin-right: 10%;
+
+}
+.contact-title
+{
+    text-shadow: 3px 2px 2px #332e3d;
+    font-family: Verdana  ;
+    color: #dcdce5;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.button, .button:visited {
+    display: inline-flex;
+    justify-content: center;
+    padding: 25px;
+    color: white;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    transition: all 250ms;
+    position: relative;
+    margin: 4% 2% 4% 2%;
+  }
+  .button.twitter {
+    background-color: #09f;
+  }
+  .button.twitter:hover, .button.twitter:hover {
+    background-color: #4db8ff;
+  }
+  .button.twitter:active {
+    background-color: #80ccff;
+  }
+  .button.facebook {
+    background-color: #469;
+  }
+  .button.facebook:hover, .button.facebook:hover {
+    background-color: #6c8dbe;
+  }
+  .button.facebook:active {
+    background-color: #8fa8cd;
+  }
+  .button.github {
+    background-color: #222;
+  }
+  .button.github:hover, .button.github:hover {
+    background-color: #484848;
+  }
+  .button.github:active {
+    background-color: #626262;
+  }
+  .button.google-plus {
+    background-color: #d43;
+  }
+  .button.google-plus:hover, .button.google-plus:hover {
+    background-color: #e88075;
+  }
+  .button.google-plus:active {
+    background-color: #efa8a0;
+  }
+  .button.linkedin {
+    background-color: #07d;
+  }
+  .button.linkedin:hover, .button.linkedin:hover {
+    background-color: #2b9dff;
+  }
+  .button.linkedin:active {
+    background-color: #5eb4ff;
+  }
+  .button.pinterest {
+    background-color: #c22;
+  }
+  .button.pinterest:hover, .button.pinterest:hover {
+    background-color: #e35757;
+  }
+  .button.pinterest:active {
+    background-color: #ea8383;
+  }
+  .button:focus, .button:hover {
+    cursor: pointer;
+  }
+  
+  /* styling */
+ 
+  #wrap {
+    box-sizing: border-box;
+    display: block;
+    vertical-align: middle;
+    padding: 20% 10% 20% 10%;
+    
+    padding-bottom: 20%;
+    padding-left: 15%;
+  }
+
+

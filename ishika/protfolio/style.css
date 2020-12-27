@@ -1,0 +1,46 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
+}
+
+banner-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(100, 10, 17, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 60%;
+  padding: 2rem;
+  text-align: center;
+}
+about-text p {
+  font-size: 1.4rem;
+  margin: 10%;
+  text-align: justify;
+}
+
+img-css {
+  width: 100%;
+   height: 100;
+}
+
+contact {
+  background-color: #343a40;
+  color: #fff;
+}
+
+copyright  {
+  background-color: #343a40;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
